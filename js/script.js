@@ -21,8 +21,8 @@ var hourSpan;
 
 var interval = setInterval(function() {
     var momentNow = moment();
-    $("#currentDay").html(momentNow.format('YYYY MMMM DD') + " " + momentNow.format('dddd').substring(0,3).toUpperCase());
-    $("#currentDay").html(currentDate + " " + momentNow.format("hh:mm:ss A"));
+    $("#currentDay").html(momentNow.format("MM DD YYYY") + " " + momentNow.format('dddd').substring(0,3).toUpperCase());
+    $("#currentDay").html(currentDate + " " + momentNow.format("hh:mm:ss a"));
 }, 100);
   
 function initPage() {
